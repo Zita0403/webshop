@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <!-- Az oldal neve, logo, keresés, bejelentkezés, vásárlás -->
+        <div class="header-section">
+            <div></div>
+            <div class="logo-header-container">
+                <div id="logo-img">
+                    <img src="./assets/images/coin_9326145.png" alt="leaf">
+                </div>
+                <h1>Natural Essential Oils</h1>
+            </div>
+            <div class="login-section">
+                <form action="./search.php" method="post">
+                    <input type="text" id="search" name="search" placeholder="Keresés...">
+                    <button type="submit" id="search-button"></button>
+                </form>
+                <div class="logo-img-container">
+                    <img src="./assets/images/user.png" alt="login">
+                </div>
+                <div class="logo-img-container">
+                    <img src="./assets/images/shopping-bag.png" alt="shoppingbag">
+                </div>
+            </div>
+        </div>
+        <!-- Navigáció -->
+        <nav>
+            <ul class="main-menu">
+                <li> <a href="">Akciók</a></li>
+                <li> <a href="">Illóolajok</a></li>
+                <li> <a href="">Csomagok</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-section1">
+            <video autoplay muted loop>
+                <source src="./assets/videos/1494281-hd_1920_1080_24fps.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="main-section2">
+            <div class="grid-item1">
+                <img src="./assets/images/pexels-mareefe-1188511.jpg" alt="" class="grid-img">
+                <h2>Nefelejcs olaj</h2>
+                <p>Immunerősítő, nyugtató, emésztést segítő hatású.</p>
+                <h3>2 500 Ft</h3>
+                <button type="submit" class="addCart" class="btn-download"></button>
+            </div>
+            <div class="grid-item2">
+                <img src="./assets/images/pexels-mareefe-932587.jpg" alt="" class="grid-img">
+                <h2>Körömvirág illóolaj</h2>
+                <p>Gyulladáscsökkentő és sebgyógyító hatású.</p>
+                <h3>3 000 Ft</h3>
+                <button type="submit" class="addCart" class="btn-download"></button>
+            </div>
+            <div class="grid-item3">
+                <img src="./assets/images/pexels-mareefe-932577.jpg" alt="" class="grid-img">
+                <h2>Orvosi Levendula illóolaj</h2>
+                <p>Fájdalomcsillapító, nyugtató és gyulladáscsökkentő hatású illóolaj.</p>
+                <h3>3 000 Ft</h3>
+                <button type="submit" class="addCart" class="btn-download"></button>
+            </div>
+            <div class="grid-item4">
+                <img src="./assets/images/pexels-mareefe-672051.jpg" alt="" class="grid-img">
+                <h2>Százszorszép olaj</h2>
+                <p>Segít a bőr tónusának fenntartásában, segít megtartani a bőr feszességét. </p>
+                <h3>2 000 Ft</h3>
+                <button type="submit" class="addCart" class="btn-download"></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Oldaltérkép</h3>
+            <ul>
+                <li> <a href="">Nyitóoldal</a></li>
+                <li> <a href="">Termékek</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Vásárlói fiók</h3>
+            <ul>
+                <li> <a href="">Belépés</a></li>
+                <li> <a href="">Regisztráció</a></li>
+                <li> <a href="">Profilom</a></li>
+                <li> <a href="">Kosár</a></li>
+                <li> <a href="">Kedvenceim</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Információk</h3>
+            <ul>
+                <li> <a href="">Általános szerződési feltételek</a></li>
+                <li> <a href="">Adatkezelési tájékoztató</a></li>
+                <li> <a href="">Fizetés</a></li>
+                <li> <a href="">Szállítás</a></li>
+                <li> <a href="">Elérhetőségek</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Natural Essential Oils</h3>
+            <ul>
+                <li>1234 XY, Z utca 1/B</li>
+                <li>+36301234567</li>
+                <li>valami@valami.hu</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

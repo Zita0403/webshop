@@ -1,0 +1,238 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: grid;
+    grid: 
+        "header-area header-area header-area header-area" 10vw
+        "main-area main-area main-area main-area" 60vw
+        "footer-area footer-area footer-area footer-area" 20vw
+        / 1fr;
+}
+
+header {
+    grid-area: header-area;
+    background-color: #717d3b;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+h1 {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+}
+main {
+    grid-area: main-area;
+    background-color: #ADBC9F;
+    display: grid;
+    grid: 
+        "sect1" 20vw
+        "sect2" 40vw
+        / 1fr;
+}
+.main-section1 {
+    grid-area: sect1;
+    background-color: #ADBC9F;
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+}
+.main-section2 {
+    grid-area: sect2;
+    background-color: #ADBC9F;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+footer  {
+    grid-area: footer-area;
+    background-color: #717d3b; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#logo-img {
+    width: 50px;
+}
+
+#logo-img > img {
+    width: 100%;
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    position: relative;
+    top: 10px;
+}
+.logo-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+
+#search {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color:#c9cfc3;
+    color: #333;
+    font-size: 16px;
+}
+
+#search:focus {
+    outline: none;
+    border-color: #717d3b;
+}
+
+#search-button {
+    background: url('./assets/images/search.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-img {
+    width: 50px;
+}
+
+.logo-img-container {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.logo-img-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    list-style: none;
+    padding: 30px 0;
+    margin: 0;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+video {
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+.grid-item1, .grid-item2, .grid-item3, .grid-item4 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    margin: 10px;
+    box-shadow: 10px 10px 5px #717d3ba9;
+    background-color: #c9cfc3;
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+.grid-item1 h3, .grid-item2 h3, .grid-item3 h3, .grid-item4 h3 {
+    margin: 10px 0; 
+}
+
+.grid-img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    align-self: flex-start; 
+    margin-bottom: 10px;
+}
+
+.addCart {
+    background: url('./assets/images/add-cart.png') no-repeat center center;
+    background-size: contain;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.addCart:hover {
+    transform: scale(1.1);
+    position: relative; 
+    animation: downloadAnimation 1s ease-in-out infinite; 
+  }
+  
+@keyframes downloadAnimation {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 2px 0;
+    text-align: left;
+}
+
+footer li {
+    text-align: left;
+}
+
+
+
