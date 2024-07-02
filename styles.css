@@ -109,6 +109,11 @@ form {
     height: 100%;
 }
 
+.bigger-img {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
 /* Header menüsor */
 
 .main-menu {
@@ -118,12 +123,34 @@ form {
     list-style: none;
     padding: 30px 0;
     margin: 0;
+    height: 30px;
+}
+
+.main-menu li {
+    display: inline-block;
 }
 
 .main-menu a {
+    position: relative;
     text-decoration: none;
     color: black;
-    display: block;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.main-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
 }
 
 /* Main */
@@ -157,6 +184,7 @@ video {
     background-color: #ADBC9F;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
 }
 
 .grid-item1, .grid-item2, .grid-item3, .grid-item4 {
@@ -193,24 +221,8 @@ video {
     height: 40px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
-}
-
-.addCart:hover {
-    transform: scale(1.1);
-    position: relative; 
-    animation: downloadAnimation 1s ease-in-out infinite; 
-  }
-  
-@keyframes downloadAnimation {
-    0% {
-      transform: translateY(0); 
-    }
-    50% {
-      transform: translateY(-10px); 
-    }
-    100% {
-      transform: translateY(0); 
-    }
+    display: inline-block;
+    padding: 22px;
 }
 
 /* Footer */
@@ -243,6 +255,10 @@ footer a {
     display: block;
     padding: 2px 0;
     text-align: left;
+}
+
+footer a:hover {
+    color: #adbc9f;
 }
 
 footer li {
